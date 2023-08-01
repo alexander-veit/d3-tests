@@ -1,0 +1,35 @@
+[
+    {
+        "id": "hms",
+        "x": 895,
+        "y": 140,
+        "pi": "Park, Peter J",
+        "affiliation": "Harvard Medical School",
+        "type": "Data Analysis Center",
+        "type_short": "DAC",
+        "marker-color": "red",
+        "project": "Data Analysis Center for Somatic Mosaicism Across Human Tissues Network"
+    },
+    {
+        "id": "washu",
+        "x": 578,
+        "y": 268,
+        "pi": "Wang, Ting",
+        "affiliation": "Washington University",
+        "type": "Organizational Center",
+        "type_short": "OC",
+        "marker-color": "black",
+        "project": "WashU Somatic Mosaicism across Human Tissues (SMaHT) Program Organizational Center"
+    },
+    {
+        "id": "seattle",
+        "x": 78,
+        "y": 10,
+        "pi": "Bennet, James T",
+        "affiliation": "Seattle Children's Hospital",
+        "type": "Genome Characterization Center",
+        "type_short": "GCC",
+        "marker-color": "purple",
+        "project": "Mosaicism in Human Tissues, from Telomere to Telomere to RFA-22-013: Somatic Mosaicism across Human Tissues Program: Genome Characterization Centers."
+    }
+]
