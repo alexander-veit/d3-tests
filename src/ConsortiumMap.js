@@ -149,7 +149,7 @@ export class ConsortiumMap extends Component {
             <div ref={this.mapReference}></div>  
           </Tab>
           <Tab eventKey="table" title="Table view">
-            <div>sss</div>  
+            <div className="text-center pt-5">Display data in a table here.</div>  
           </Tab>
          
         </Tabs>
