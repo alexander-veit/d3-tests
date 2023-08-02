@@ -1,0 +1,55 @@
+{
+    "nodes": [
+        {"node":0,"name":"GCC0"},
+        {"node":1,"name":"GCC1"},
+        {"node":2,"name":"GCC2"},
+        {"node":3,"name":"GCC3"},
+        {"node":4,"name":"GCC4"},
+
+        {"node":5,"name":"WGS, bulk, short-read"},
+        {"node":6,"name": "WGS, long-read, ONT"},
+        {"node":7,"name": "WGS, long-read, PacBio"},
+        {"node":8,"name": "RNA Seq, bulk"},
+        {"node":9,"name": "SCWGS, DLP+"},
+        {"node":10,"name": "Hi-C"},
+        {"node":11,"name": "NT-Seq"},
+
+        {"node":12,"name":"SNV"},
+        {"node":13,"name":"InDel"},
+        {"node":14,"name":"CNV"},
+        {"node":15,"name":"SV/TRA"},
+        {"node":16,"name":"SV/DuP"},
+        {"node":17,"name":"MEI"},
+        {"node":18,"name":"Gene-Expression/Transctipt"}
+    ],
+    "links": [
+        {"source":0,"target":5,"value":1},
+        {"source":0,"target":6,"value":1},
+        {"source":0,"target":7,"value":1},
+        {"source":1,"target":6,"value":1},
+        {"source":1,"target":8,"value":1},
+        {"source":1,"target":10,"value":1},
+        {"source":2,"target":5,"value":1},
+        {"source":2,"target":6,"value":1},
+        {"source":2,"target":7,"value":1},
+        {"source":3,"target":6,"value":1},
+        {"source":3,"target":7,"value":1},
+        {"source":3,"target":8,"value":1},
+        {"source":4,"target":9,"value":1},
+        {"source":4,"target":10,"value":1},
+        {"source":4,"target":11,"value":1},
+
+        {"source":5,"target":18,"value":1},
+        {"source":5,"target":15,"value":1},
+        {"source":5,"target":12,"value":1},
+        {"source":6,"target":17,"value":1},
+        {"source":6,"target":14,"value":1},
+        {"source":7,"target":16,"value":1},
+        {"source":8,"target":15,"value":1},
+        {"source":9,"target":14,"value":1},
+        {"source":10,"target":13,"value":1},
+        {"source":10,"target":14,"value":1},
+        {"source":11, "target":12,"value":1},
+        {"source":11, "target":13,"value":1}
+    ]
+}
