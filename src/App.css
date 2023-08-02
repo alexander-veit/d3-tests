@@ -57,3 +57,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Styles for the Alluvial Plot */
+
+html {
+  background-color: hsl(0, 0%, 0%);
+  background-color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+div#container {
+  height: 500px;
+  width: 500px;
+  background-color: gray;
+  margin: 200px auto auto auto;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
