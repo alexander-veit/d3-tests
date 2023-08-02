@@ -198,9 +198,6 @@ export function sankeyFunc() {
             .sort((a, b) => d3.ascending(a[0], b[0]))
             .map(function(d) { return d[1]; });
 
-        console.log(nodesByBreadth)
-
-        //
         initializeNodeDepth();
         resolveCollisions();
         for (var alpha = 1; iterations > 0; --iterations) {
