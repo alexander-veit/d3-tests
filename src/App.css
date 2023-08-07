@@ -44,6 +44,46 @@
   font-weight: bold;
   font-size: 10px;
 }
+.consortium-table-OC {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #000000;
+  cursor: default;
+  color: #ffffff;
+}
+.consortium-table-DAC {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #ff0000;
+  cursor: default;
+  color: #ffffff;
+}
+.consortium-table-TPC {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #8000bf;
+  cursor: default;
+  color: #ffffff;
+}
+.consortium-table-GCC {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #FFC300;
+  cursor: default;
+  color: #ffffff;
+}
+.consortium-table-TTD {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #097969;
+  cursor: default;
+  color: #ffffff;
+}
+.consortium-table-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 .App-link {
   color: #61dafb;

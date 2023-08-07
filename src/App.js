@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <React.Fragment>
-      <div className='container'>
+      <div className='container pb-5'>
         <ConsortiumMap/>
       </div>
       
