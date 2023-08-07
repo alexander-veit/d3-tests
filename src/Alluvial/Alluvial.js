@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, StrictMode } from 'react';
+import React, { useRef, useEffect } from 'react';
 import * as d3 from "d3";
 import graph from "../data/alluvial-data.json";
 import { sankeyFunc } from './util/sankey';
@@ -67,8 +67,8 @@ export const Alluvial = () => {
             .append("path")
             .attr("class", "link")
             .attr("d", sankey.link() )
-            .style("stroke-width", function(d) { return 3 })
-            // .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+            // .style("stroke-width", function(d) { return 25 })
+            .style("stroke-width", function(d) { return Math.max(1, d.dy); })
             .sort(function(a, b) { return b.dy - a.dy; });
 
             // add in the nodes
