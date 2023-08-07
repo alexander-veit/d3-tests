@@ -12,11 +12,11 @@
         "color": "purple"
     },
     {
-        "center-type": "Technology and Tool Development (14)",
-        "color": "green"
-    },
-    {
         "center-type": "Genome Characterization Center (5)",
         "color": "orange"
+    },
+    {
+        "center-type": "Technology and Tool Development (14)",
+        "color": "green"
     }
 ]

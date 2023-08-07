@@ -266,7 +266,7 @@ export class ConsortiumMap extends Component {
         ></div>
 
         <Tabs
-          defaultActiveKey="table"
+          defaultActiveKey="map"
           className="mb-3 float-right"
           variant="pills"
         >
