@@ -9,10 +9,11 @@ function App() {
   return (
     <React.Fragment>
       <div className='container pb-5'>
-        <Alluvial />
         <ConsortiumMap/>
       </div>
-      
+      <div className="alluvial-container container-full">
+        <Alluvial />
+      </div>
     </React.Fragment>
   );
 }

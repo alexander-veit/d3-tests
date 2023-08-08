@@ -28,14 +28,13 @@ export const Alluvial = () => {
             // Loading in th sankey plot example from: 
             // set the dimensions and margins of the graph
             var margin = {top: 10, right: 10, bottom: 10, left: 10},
-            width = 1000 - margin.left - margin.right,
-            height = 700 - margin.top - margin.bottom;
+            width = 1200 - margin.left - margin.right,
+            height = 800 - margin.top - margin.bottom;
 
             // append the svg object to the body of the page
             var svg = d3.select(container).append("svg")
                     .attr("width", width + margin.left + margin.right)
                     .attr("height", height + margin.top + margin.bottom)
-                    .style("border", "1px solid black")
                     .append("g")
                     .attr("transform",
                         "translate(" + margin.left + "," + margin.top + ")");
@@ -46,7 +45,7 @@ export const Alluvial = () => {
 
             // Set the sankey diagram properties
             var sankey = sankeyFunc()
-            .nodeWidth(10)
+            .nodeWidth(20)
             .nodePadding(10)
             .size([width, height]);
 
@@ -57,7 +56,7 @@ export const Alluvial = () => {
             sankey
             .nodes(graph.nodes)
             .links(graph.links)
-            .layout(1);
+            .layout(2);
 
             // add in the links
             var link = svg.append("g")
@@ -67,9 +66,10 @@ export const Alluvial = () => {
             .append("path")
             .attr("class", "link")
             .attr("d", sankey.link() )
-            // .style("stroke-width", function(d) { return 25 })
+            .attr("data-source", function(d) { return d.source.name } )
+            .style("stroke", function(d) { return d.color = color(d.source.name.replace(/ .*/, "")); })
             .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-            .sort(function(a, b) { return b.dy - a.dy; });
+            .sort(function(a, b) { return b.dy - a.dy; })
 
             // add in the nodes
             var node = svg.append("g")
@@ -78,10 +78,18 @@ export const Alluvial = () => {
             .enter().append("g")
             .attr("class", "node")
             .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+            .on("mouseover", (e, d) => {
+                d3.selectAll(`.link[data-source='${d.name}']`)
+                  .style("stroke-opacity", "0.8")
+            })
+            .on("mouseleave", (e, d) => {
+                d3.selectAll(`.link[data-source='${d.name}']`)
+                  .style("stroke-opacity", "0.2")
+            })
             .call(d3.drag()
                 .subject(function(d) { return d; })
                 .on("start", function() { this.parentNode.appendChild(this); })
-                .on("drag", dragmove));
+                .on("drag", dragmove))
 
             // add the rectangles for the nodes
             node
@@ -91,8 +99,8 @@ export const Alluvial = () => {
             .style("fill", function(d) { return d.color = color(d.name.replace(/ .*/, "")); })
             .style("stroke", function(d) { return d3.rgb(d.color).darker(2); })
             // Add hover text
-            .append("title")
-            .text(function(d) { return d.name + "\n" + "There is " + d.value + " stuff in this node"; });
+            .append("title", function(d) { return d.name})
+            // .text(function(d) { return d.name + "\n" + "There is " + d.value + " stuff in this node"; });
 
             // add in the title for the nodes
             node
@@ -102,8 +110,8 @@ export const Alluvial = () => {
                 .attr("dy", ".35em")
                 .attr("text-anchor", "end")
                 .attr("transform", null)
-                .text(function(d) { return d.name; })
-            .filter(function(d) { return d.x < width / 2; })
+                .text(function(d) { console.log(d);return d.name; })
+                .filter(function(d) { return d.x < width / 2; })
                 .attr("x", 6 + sankey.nodeWidth())
                 .attr("text-anchor", "start");
 
@@ -125,8 +133,8 @@ export const Alluvial = () => {
 
 
     return (
-        <>
-            <Tabs
+        <div>
+            {/* <Tabs
                 defaultActiveKey="alluvial"
                 className="mb-3 float-right"
                 variant="pills"
@@ -139,9 +147,15 @@ export const Alluvial = () => {
                 <Tab eventKey="table" title="Table view">
                     <div className="text-center pt-5">Display alluvial data in a table here.</div>  
                 </Tab>
-                
-            </Tabs>
-        </>
+            </Tabs> */}
+            <div className='headers d-flex'>
+                <h4 className="header-left">Data Generators</h4>
+                <h4 className="header-center">Sequencing Platform / Assay Type</h4>
+                <h4 className="header-right">Molecular Features Profiled</h4>
+            </div>
+            <div ref={containerRef}>
+            </div> 
+        </div>
     )
 }
 
