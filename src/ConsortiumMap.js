@@ -247,7 +247,7 @@ export class ConsortiumMap extends Component {
         <thead className="consortium-table-header bg-white">
           <tr>
             <th></th>
-            <th>Principal Investigator</th>
+            <th>Principal Investigators</th>
             <th>Institution</th>
             <th>Project title</th>
           </tr>
