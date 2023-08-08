@@ -2,7 +2,7 @@
     {
         "x": 595,
         "y": 250,
-        "pi": "Wang, Ting",
+        "pis": ["Wang, Ting", "Fulton, Lucinda", "Lawson, Heather A"],
         "institution": "Washington University",
         "center-type": "Organizational Center",
         "center-type-short": "OC",
@@ -16,7 +16,7 @@
     {
         "x": 880,
         "y": 80,
-        "pi": "Park, Peter J",
+        "pis": ["Park, Peter J"],
         "institution": "Harvard Medical School",
         "center-type": "Data Analysis Center",
         "center-type-short": "DAC",
@@ -30,7 +30,7 @@
     {
         "x": 833,
         "y": 202,
-        "pi": "Bell, Thomas J",
+        "pis": ["Bell, Thomas J"],
         "institution": "National Disease Research Interchange",
         "center-type": "Tissue Procurement Center",
         "center-type-short": "TPC",
@@ -43,7 +43,7 @@
     {
         "x": 940,
         "y": 145,
-        "pi": "Ardlie, Kristin",
+        "pis": ["Ardlie, Kristin", "Lennon, Niall John", "Natarajan, Pradeep"],
         "institution": "Broad Institute",
         "center-type": "Genome Characterization Center",
         "center-type-short": "GCC",
@@ -57,7 +57,7 @@
     {
         "x": 78,
         "y": 10,
-        "pi": "Bennet, James T",
+        "pis": ["Bennet, James T", "Eichler, Evan", "Stergachis, Andrew B"],
         "institution": "Seattle Children's Hospital",
         "center-type": "Genome Characterization Center",
         "center-type-short": "GCC",
@@ -70,7 +70,7 @@
     {
         "x": 912,
         "y": 186,
-        "pi": "Germer, Soren",
+        "pis": ["Germer, Soren", "Aparicio, Samuel"],
         "institution": "New York Genome Center",
         "center-type": "Genome Characterization Center",
         "center-type-short": "GCC",
@@ -84,7 +84,7 @@
     {
         "x": 487,
         "y": 460,
-        "pi": "Gibbs, Richard",
+        "pis": ["Gibbs, Richard", "Chen, Rui", "Doddapaneni, Harscha V"],
         "institution": "Baylor College of Medicine",
         "center-type": "Genome Characterization Center",
         "center-type-short": "GCC",
@@ -98,7 +98,7 @@
     {
         "x": 561,
         "y": 250,
-        "pi": "Wang, Ting",
+        "pis": ["Wang, Ting", "Fulton, Robert", "Scott Shen, Hui"],
         "institution": "Washington University",
         "center-type": "Genome Characterization Center",
         "center-type-short": "GCC",
@@ -112,7 +112,7 @@
     {
         "x": 539,
         "y": 150,
-        "pi": "Abyzov, Alexej",
+        "pis": ["Abyzov, Alexej"],
         "institution": "Mayo Clinic Rochester",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -125,7 +125,7 @@
     {
         "x": 853,
         "y": 90,
-        "pi": "Burns, Kathleen H",
+        "pis": ["Burns, Kathleen H", "Lee, Eunjung Alice"],
         "institution": "Dana-Farber Cancer Institute",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -139,7 +139,7 @@
     {
         "x": 910,
         "y": 90,
-        "pi": "Chen, Fei",
+        "pis": ["Chen, Fei", "Buenrostro, Jason D", "Getz, Gad A"],
         "institution": "Broad Institute",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -153,7 +153,7 @@
     {
         "x": 934,
         "y": 110,
-        "pi": "Choudhury, Sangita",
+        "pis": ["Choudhury, Sangita", "Lee, Eunjung Alice", "Walsh, Christopher A"],
         "institution": "Boston Children's Hospital",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -167,7 +167,7 @@
     {
         "x": 895,
         "y": 218,
-        "pi": "Evrony, Gilad David",
+        "pis": ["Evrony, Gilad D"],
         "institution": "New York University School of Medicine",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -181,7 +181,7 @@
     {
         "x": 830,
         "y": 152,
-        "pi": "Fazzio, Thomas G",
+        "pis": ["Fazzio, Thomas G", "Garber, Manuel"],
         "institution": "UMass Chan Medical School",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -195,7 +195,7 @@
     {
         "x": 712,
         "y": 192,
-        "pi": "Jin, Fulai",
+        "pis": ["Jin, Fulai", "Li, Yan"],
         "institution": "Case Western Reserve University",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -208,7 +208,7 @@
     {
         "x": 870,
         "y": 235,
-        "pi": "Landau, Dan",
+        "pis": ["Landau, Dan", "Satija, Rahul"],
         "institution": "Weill Cornell Medical College",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -222,7 +222,7 @@
     {
         "x": 208,
         "y": 202,
-        "pi": "Marth, Gabort",
+        "pis": ["Marth, Gabort", "Underhill, Hunter R"],
         "institution": "University of Utah",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -235,7 +235,7 @@
     {
         "x": 682,
         "y": 175,
-        "pi": "Mills, Ryan E",
+        "pis": ["Mills, Ryan E", "Boyle, Alan P", "McConnell, Michael J"],
         "institution": "University of Michigan at Ann Arbour",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -248,7 +248,7 @@
     {
         "x": 459,
         "y": 470,
-        "pi": "Sedlazeck, Fritz J",
+        "pis": ["Sedlazeck, Fritz J", "Wu, Tao"],
         "institution": "Baylor College of Medicine",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -262,7 +262,7 @@
     {
         "x": 16,
         "y": 237,
-        "pi": "Urban, Alexander Eckehart",
+        "pis": ["Urban, Alexander E"],
         "institution": "Standford University",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -275,7 +275,7 @@
     {
         "x": 833,
         "y": 115,
-        "pi": "Walsh, Christopher A",
+        "pis": ["Walsh, Christopher A", "Park, Peter J"],
         "institution": "Boston Children's Hospital",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",
@@ -289,7 +289,7 @@
     {
         "x": 515,
         "y": 470,
-        "pi": "Zong, Chenghang",
+        "pis": ["Zong, Chenghang"],
         "institution": "Baylor College of Medicine",
         "center-type": "Technology and Tool Development",
         "center-type-short": "TTD",

@@ -151,8 +151,8 @@ export class ConsortiumMap extends Component {
       <div class="pb-2 font-weight-bold">${consortium["center-type"]}</div>
       <div class="consortium-tooltip-header">Institution</div>
       <div class="pb-2 consortium-tooltip-content">${consortium["institution"]}</div>
-      <div class="consortium-tooltip-header">Principal Investigator</div>
-      <div class="pb-2 consortium-tooltip-content">${consortium.pi}</div>
+      <div class="consortium-tooltip-header">Principal Investigators</div>
+      <div class="pb-2 consortium-tooltip-content">${consortium.pis.join("<br/>")}</div>
       <div class="consortium-tooltip-header">Project</div>
       <div class="consortium-tooltip-content">${consortium.project}</div>
       <i class="pt-2 d-block small">Clicking on this marker will open the NIH project page in a new tab.</i>
@@ -212,6 +212,9 @@ export class ConsortiumMap extends Component {
     consortia.forEach((c) => {
       const centerTypeClass =
         "align-middle text-center consortium-table-" + c["center-type-short"];
+      const pis = c["pis"].map(p => {
+        return (<div className="text-nowrap">{p}</div>);
+      });
       centerRows.push(
         <tr>
           <td className={centerTypeClass}>
@@ -224,7 +227,7 @@ export class ConsortiumMap extends Component {
               <div className="px-1">{c["center-type-short"]}</div>
             </OverlayTrigger>
           </td>
-          <td className="align-middle">{c["pi"]}</td>
+          <td className="align-middle">{pis}</td>
           <td className="align-middle">{c["institution"]}</td>
           <td className="align-middle">
             {c["project"]} <br />
