@@ -117,11 +117,47 @@ div#container {
   margin: 200px auto auto auto;
 }
 
+.alluvial-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.headers {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  width: 350px;
+  margin-left:0;
+  text-align: left;
+}
+
+.hedaer-center {
+  width: 350px;
+  margin: auto;
+}
+
+.header-right {
+  width: 350px;
+  float: right;
+  text-align: right;
+}
+
+.node {
+
+}
+
+.node:hover {
+  cursor: pointer;
+}
+
 .link {
   fill: none;
-  stroke: #000;
   stroke-opacity: .2;
 }
 .link:hover {
-  stroke-opacity: .5;
+  stroke-opacity: .8;
 }
