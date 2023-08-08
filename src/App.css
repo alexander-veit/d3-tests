@@ -97,3 +97,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* Styles for the Alluvial Plot */
+
+html {
+  background-color: hsl(0, 0%, 0%);
+  background-color: white;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+div#container {
+  height: 500px;
+  width: 500px;
+  background-color: gray;
+  margin: 200px auto auto auto;
+}
+
+.alluvial-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.headers {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  width: 350px;
+  margin-left:0;
+  text-align: left;
+}
+
+.hedaer-center {
+  width: 350px;
+  margin: auto;
+}
+
+.header-right {
+  width: 350px;
+  float: right;
+  text-align: right;
+}
+
+.node {
+
+}
+
+.node:hover {
+  cursor: pointer;
+}
+
+.link {
+  fill: none;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .8;
+}
