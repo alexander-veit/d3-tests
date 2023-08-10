@@ -11,7 +11,7 @@
         "project": "WashU Somatic Mosaicism across Human Tissues (SMaHT) Program Organizational Center",
         "project-number": "1U24NS132103-01",
         "url": "https://reporter.nih.gov/project-details/10661968",
-        "location": "WashU"
+        "location": "St. Louis"
     },
     {
         "x": 880,
@@ -79,7 +79,7 @@
         "project": "New York Genome Characterization Center: Somatic Mosaicism across Human Tissues",
         "project-number": "1UM1DA058236-01",
         "url": "https://reporter.nih.gov/project-details/10662878",
-        "location": "NYC"
+        "location": "New York City"
     },
     {
         "x": 487,
@@ -93,7 +93,7 @@
         "project": "Comprehensive Somatic Variant Characterization at the HGSC",
         "project-number": "1UM1DA058229-01",
         "url": "https://reporter.nih.gov/project-details/10662645",
-        "location": "Baylor"
+        "location": "Houston"
     },
     {
         "x": 561,
@@ -107,7 +107,7 @@
         "project": "WashU-VAI Somatic Mosaicism across Human Tissues (SMaHT) Program Genome Characterization Center",
         "project-number": "1UM1DA058219-01",
         "url": "https://reporter.nih.gov/project-details/10662065",
-        "location": "WashU"
+        "location": "St. Louis"
     },
     {
         "x": 539,
@@ -176,7 +176,7 @@
         "project": "Ultra-high fidelity single-molecule profiling of mosaic double- and single-strand DNA mutations and damage",
         "project-number": "1UG3NS132024-01",
         "url": "https://reporter.nih.gov/project-details/10657882",
-        "location": "NYC"
+        "location": "New York City"
     },
     {
         "x": 830,
@@ -217,7 +217,7 @@
         "project": "Single-cell multi-omics to link clonal mosaicism (CM) genotypes with chromatin, epigenomic, transcriptomic and protein phenotypes",
         "project-number": "1UG3NS132139-01",
         "url": "https://reporter.nih.gov/project-details/10662879",
-        "location": "NYC"
+        "location": "New York City"
     },
     {
         "x": 208,
@@ -257,7 +257,7 @@
         "project": "Identification of somatic/ mosaic SV and transposon activity and their crosstalk to DNA epigenetic Modifications",
         "project-number": "1UG3NS132105-01",
         "url": "https://reporter.nih.gov/project-details/10662143",
-        "location": "Baylor"
+        "location": "Houston"
     },
     {
         "x": 16,
@@ -298,6 +298,6 @@
         "project": "Develop accurate high-coverage and high-throughput single-cell Duplex-seq chemistry and multi-omics platforms for simultaneous profiling of somatic mutation and the transcriptome in single human cells",
         "project-number": "1UG3NS132132-01",
         "url": "https://reporter.nih.gov/project-details/10662693",
-        "location": "Baylor"
+        "location": "Houston"
     }
 ]

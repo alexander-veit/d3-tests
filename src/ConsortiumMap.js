@@ -83,9 +83,9 @@ export class ConsortiumMap extends Component {
     };
     this.addConnectionLines(svg, centerCoods["Boston"], "Boston");
     this.addConnectionLines(svg, centerCoods["Worcester"], "Worcester");
-    this.addConnectionLines(svg, centerCoods["NYC"], "NYC");
-    this.addConnectionLines(svg, centerCoods["WashU"], "WashU");
-    this.addConnectionLines(svg, centerCoods["Baylor"], "Baylor");
+    this.addConnectionLines(svg, centerCoods["NYC"], "New York City");
+    this.addConnectionLines(svg, centerCoods["WashU"], "St. Louis");
+    this.addConnectionLines(svg, centerCoods["Baylor"], "Houston");
 
     svg
       .selectAll(".m")
@@ -150,9 +150,13 @@ export class ConsortiumMap extends Component {
     <div class="consortium-tooltip-wrapper">
       <div class="pb-2 font-weight-bold">${consortium["center-type"]}</div>
       <div class="consortium-tooltip-header">Institution</div>
-      <div class="pb-2 consortium-tooltip-content">${consortium["institution"]}</div>
+      <div class="pb-2 consortium-tooltip-content">${
+        consortium["institution"]
+      }</div>
       <div class="consortium-tooltip-header">Principal Investigators</div>
-      <div class="pb-2 consortium-tooltip-content">${consortium.pis.join("<br/>")}</div>
+      <div class="pb-2 consortium-tooltip-content">${consortium.pis.join(
+        "<br/>"
+      )}</div>
       <div class="consortium-tooltip-header">Project</div>
       <div class="consortium-tooltip-content">${consortium.project}</div>
       <i class="pt-2 d-block small">Clicking on this marker will open the NIH project page in a new tab.</i>
@@ -201,6 +205,32 @@ export class ConsortiumMap extends Component {
       .attr("cy", centerCoords[1] + MARKER_SIZE - 4)
       .attr("r", 3)
       .style("fill", LINE_COLOR);
+
+    svg
+      .append("rect")
+      .attr("x", centerCoords[0] + MARKER_SIZE/2 - 4)
+      .attr("y", centerCoords[1] + MARKER_SIZE - 8)
+      .attr("width", 8)
+      .attr("height", 8)
+      .style("opacity", 0)
+      .on("mouseover", (evt, d) => {
+        d3.select("#consortiumMapTooltip")
+          .text(location)
+          .transition()
+          .duration(200)
+          .style("opacity", 1);
+      })
+      .on("mouseout", function () {
+        d3.select("#consortiumMapTooltip")
+          .style("opacity", 0)
+          .style("left", "-500px")
+          .style("top", "0px");
+      })
+      .on("mousemove", function (evt) {
+        d3.select("#consortiumMapTooltip")
+          .style("left", evt.pageX + 10 + "px")
+          .style("top", evt.pageY + 10 + "px");
+      });
   }
 
   renderTable() {
@@ -212,8 +242,8 @@ export class ConsortiumMap extends Component {
     consortia.forEach((c) => {
       const centerTypeClass =
         "align-middle text-center consortium-table-" + c["center-type-short"];
-      const pis = c["pis"].map(p => {
-        return (<div className="text-nowrap">{p}</div>);
+      const pis = c["pis"].map((p) => {
+        return <div className="text-nowrap">{p}</div>;
       });
       centerRows.push(
         <tr>
@@ -227,8 +257,8 @@ export class ConsortiumMap extends Component {
               <div className="px-1">{c["center-type-short"]}</div>
             </OverlayTrigger>
           </td>
-          <td className="align-middle">{pis}</td>
-          <td className="align-middle">{c["institution"]}</td>
+          <td className="align-middle border-right">{pis}</td>
+          <td className="align-middle border-right">{c["institution"]}</td>
           <td className="align-middle">
             {c["project"]} <br />
             <small>
