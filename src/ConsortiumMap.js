@@ -32,7 +32,7 @@ export class ConsortiumMap extends Component {
   }
 
   drawChart() {
-    const color = d3.scaleLinear([1, 10], d3.schemeBlues[9]);
+    const color = d3.scaleLinear([1, 10], d3.schemeGreys[9]);
     const path = d3.geoPath();
 
     const states = topojson.feature(us, us.objects.states);
@@ -52,17 +52,17 @@ export class ConsortiumMap extends Component {
       .selectAll("path")
       .data(states.features)
       .join("path")
-      .attr("fill", (d) => color(20))
+      .attr("fill", (d) => color(15))
       .attr("d", path)
       .on("mouseout", function () {
         d3.select("#consortiumMapTooltip")
           .style("opacity", 0)
           .style("left", "-500px")
           .style("top", "0px");
-        d3.select(this).attr("fill", (d) => color(20));
+        d3.select(this).attr("fill", (d) => color(15));
       })
       .on("mouseover", function () {
-        d3.select(this).attr("fill", (d) => color(30));
+        d3.select(this).attr("fill", (d) => color(25));
       });
     //   .append("title")
     // .text(d => `${d.properties.name}`);
