@@ -34,48 +34,48 @@
   opacity: 0;
 }
 .consortium-tooltip-wrapper {
-  max-width: 200px;
-  font-size: 12px;
+  max-width: 220px;
+  font-size: 14px;
 }
 .consortium-tooltip-content {
-  font-size: 12px;
+  font-size: 14px;
 }
 .consortium-tooltip-header {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
 }
 .consortium-table-OC {
   font-weight: bold;
   font-size: 22px;
-  background-color: #000000;
+  background-color: #377eb8;
   cursor: default;
   color: #ffffff;
 }
 .consortium-table-DAC {
   font-weight: bold;
   font-size: 22px;
-  background-color: #ff0000;
+  background-color: #e41a1c;
   cursor: default;
   color: #ffffff;
 }
 .consortium-table-TPC {
   font-weight: bold;
   font-size: 22px;
-  background-color: #8000bf;
+  background-color: #984ea3;
   cursor: default;
   color: #ffffff;
 }
 .consortium-table-GCC {
   font-weight: bold;
   font-size: 22px;
-  background-color: #FFC300;
+  background-color: #ff7f00;
   cursor: default;
   color: #ffffff;
 }
 .consortium-table-TTD {
   font-weight: bold;
   font-size: 22px;
-  background-color: #097969;
+  background-color: #4daf4a;
   cursor: default;
   color: #ffffff;
 }

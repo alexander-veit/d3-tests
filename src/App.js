@@ -11,9 +11,9 @@ function App() {
       <div className='container pb-5'>
         <ConsortiumMap/>
       </div>
-      <div className="alluvial-container container-full">
+      {/* <div className="alluvial-container container-full">
         <Alluvial />
-      </div>
+      </div> */}
     </React.Fragment>
   );
 }
